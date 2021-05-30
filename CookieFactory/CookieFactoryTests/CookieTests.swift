@@ -1,53 +1,65 @@
 //
 //  CookieTests.swift
-//  CookieFactory
+//  CookieFactoryTests
 //
-//  Created by Abhishek Mishra on 01/01/2017.
-//  Copyright © 2017 ASM Technology Ltd. All rights reserved.
+//  Created by Cesar Paiva on 05/11/19.
+//  Copyright © 2019 Cesar Paiva. All rights reserved.
 //
 
 import XCTest
+
+@testable import CookieFactory
 
 class CookieTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
     func testInit_GingerbreadCookieType_DoesNotReturnNil() {
+        
         let cookie = Cookie(.gingerbread)
+        
         XCTAssertNotNil(cookie)
     }
-
+    
     func testInit_ShortbreadCookieType_DoesNotReturnNil() {
+        
         let cookie = Cookie(.shortbread)
+        
         XCTAssertNotNil(cookie)
     }
     
     func testInit_ChocolateChipCookieType_DoesNotReturnNil() {
+        
         let cookie = Cookie(.chocolateChip)
+        
         XCTAssertNotNil(cookie)
     }
- 
-    func testInit_GingerbreadCookieType_SetsCookieTypeIvarCorrectly() {
+    
+    func testInit_GingerbreadCookieType_SetsCookieTypeVarCorrectly() {
+        
         let cookie = Cookie(.gingerbread)
-        XCTAssertEqual(cookie.type, .gingerbread)
+        
+        XCTAssertEqual(cookie.type, CookieType.gingerbread)
     }
     
-    func testInit_ShortbreadCookieType_SetsCookieTypeIvarCorrectly() {
+    func testInit_ShortbreadCookieType_SetsCookieTypeVarCorrectly() {
+        
         let cookie = Cookie(.shortbread)
-        XCTAssertEqual(cookie.type, .shortbread)
+        
+        XCTAssertEqual(cookie.type, CookieType.shortbread)
     }
     
-    func testInit_ChocolateChipCookieType_SetsCookieTypeIvarCorrectly() {
+    func testInit_ChocolateChip_SetsCookieTypeVarCorrectly() {
+        
         let cookie = Cookie(.chocolateChip)
-        XCTAssertEqual(cookie.type, .chocolateChip)
+        
+        XCTAssertEqual(cookie.type, CookieType.chocolateChip)
     }
     
 }

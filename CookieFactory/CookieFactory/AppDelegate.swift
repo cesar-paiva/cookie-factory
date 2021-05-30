@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  CookieFactory
 //
-//  Created by Abhishek Mishra on 30/12/2016.
-//  Copyright © 2016 ASM Technology Ltd. All rights reserved.
+//  Created by Cesar Paiva on 05/11/19.
+//  Copyright © 2019 Cesar Paiva. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }

@@ -2,23 +2,24 @@
 //  Cookie.swift
 //  CookieFactory
 //
-//  Created by Abhishek Mishra on 01/01/2017.
-//  Copyright © 2017 ASM Technology Ltd. All rights reserved.
+//  Created by Cesar Paiva on 05/11/19.
+//  Copyright © 2019 Cesar Paiva. All rights reserved.
 //
 
 import Foundation
 
-enum cookieType {
-    case shortbread
+enum CookieType {
     case gingerbread
+    case shortbread
     case chocolateChip
 }
 
-class Cookie : NSObject {
-    var type:cookieType
+class Cookie {
     
-    init(_ type:cookieType) {
+    var type: CookieType?
+    
+    init(_ type: CookieType) {
         self.type = type
-        super.init()
     }
+    
 }
